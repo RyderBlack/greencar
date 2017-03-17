@@ -84,7 +84,10 @@ nav.navbar.navbar-default {
     width: 4.5em;
 }
 
-
+header {
+  padding-bottom: 5em;
+  background-color: #222222;
+}
 /* == DEBUT INTRO == */
 
 .bg-intro {
@@ -111,14 +114,13 @@ nav.navbar.navbar-default {
 
 .texte-reseaux-sociaux {
     color: white;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .well {
-    margin-top: 15vh;
+
     background-color: rgba(0, 0, 0, 0.5);
     color: black;
-    padding-top: 50px;
     padding-bottom: 50px;
     border-radius: 10px;
     border-color: rgba(0, 0, 0, 0);
@@ -139,7 +141,7 @@ legend > * {
   /*  display: none; */
 }
 
-.bouton-promo.bouton > a {
+.bouton-promo > a {
     color : white;
 }
 
@@ -257,6 +259,7 @@ legend > * {
 
 .section-fonctionnement-appli {
     padding: 50px;
+    background-color: #eee;
 }
 
 .titre-fonctionnement-appli {
@@ -967,13 +970,13 @@ a:hover {
 }
 
 #headerCurve {
-    background-color: white;
+    background-color: #eee;
     position: -webkit-relative;
     position: relative;
-    width: 120%;
+    width: 100%;
     overflow: hidden;
     height: 70px;
-    top: 25px;
+    top: 0;
     bottom: 0;
     left: 0px;
 }
@@ -981,7 +984,7 @@ a:hover {
 #headerCurve2 {
     position: -webkit-relative;
     position: relative;
-    width: 120%;
+    width: 100%;
     overflow: hidden;
     height: 70px;
     top: 25px;
@@ -992,7 +995,7 @@ a:hover {
 #headerCurve3 {
     background-color: white;
     position: relative;
-    width: 120%;
+    width: 100%;
     overflow: hidden;
     height: 70px;
     top: 5px;
@@ -1004,7 +1007,7 @@ a:hover {
     background-color: #f8f8f8;
     position: -webkit-relative;
     position: relative;
-    width: 120%;
+    width: 100%;
     overflow: hidden;
     height: 70px;
     top: 55px;
@@ -1014,7 +1017,7 @@ a:hover {
     background-color: #eee;
     position: -webkit-relative;
     position: relative;
-    width: 120%;
+    width: 100%;
     overflow: hidden;
     height: 70px;
     top: 55px;
@@ -1024,7 +1027,7 @@ a:hover {
     background-color: #f8f8f8;
     position: -webkit-relative;
     position: relative;
-    width: 120%;
+    width: 100%;
     overflow: hidden;
     height: 70px;
     top: 55px;
@@ -1036,7 +1039,7 @@ a:hover {
     background-color: #f8f8f8;
     position: -webkit-relative;
     position: relative;
-    width: 120%;
+    width: 100%;
     overflow: hidden;
     height: 70px;
     top: 55px;
@@ -1047,7 +1050,7 @@ a:hover {
 #travelMessageCurve2 {
   position: -webkit-relative;
     position: relative;
-    width: 120%;
+    width: 100%;
     overflow: hidden;
     height: 70px;
     top: 35px;
