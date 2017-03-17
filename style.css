@@ -1,7 +1,3 @@
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-}
 
 .page-accueil {
     overflow: hidden;
@@ -153,7 +149,7 @@ legend > * {
 
 @font-face {
   font-family: "housepaint";
-  src: url("fonts/HOUSEPAINT.ttf");
+  src: url("fonts/housepaint-webfont.woff");
 }
 
 .tribu {
@@ -193,6 +189,21 @@ legend > * {
 
 /* == FIN SECTION OFFRE PROMOS == */
 
+/* == DEBUT GROS TITRE QU EST QUE TOTEM  == */
+#je_decouvre {
+  background-image: url(images/banniere-totem_cest_quoi-02.png);
+  background-position: center;
+  background-size: cover;
+}
+.gros-titre-totem_c_est_quoi{
+    font-family: "housepaint", 'Helvetica', 'Lato', sans-serif;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 4em;
+    padding: 20px;
+}
+/* == DEBUT GROS TITRE QU EST QUE TOTEM  == */
+
 
 /* == DEBUT SECTION QU'EST-CE QUE TOTEM == */
 
@@ -226,12 +237,6 @@ legend > * {
 .titre-comment_ca_marche {
     padding: 20px;
     font-size: 3em;
-    width: 80%;
-    background-color: #2c2c2c;
-    border-radius: 50px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 1.5em;
     font-family: "housepaint"
 }
 
@@ -240,7 +245,7 @@ legend > * {
 }
 
 .numbers-icons {
-    width: 025%;
+    max-width: 25%;
     margin-bottom: 1em;
 }
 
@@ -966,6 +971,7 @@ a:hover {
     position: -webkit-relative;
     position: relative;
     width: 120%;
+    overflow: hidden;
     height: 70px;
     top: 25px;
     bottom: 0;
@@ -976,6 +982,7 @@ a:hover {
     position: -webkit-relative;
     position: relative;
     width: 120%;
+    overflow: hidden;
     height: 70px;
     top: 25px;
     bottom: 0;
@@ -985,7 +992,8 @@ a:hover {
 #headerCurve3 {
     background-color: white;
     position: relative;
-    width: 100%;
+    width: 120%;
+    overflow: hidden;
     height: 70px;
     top: 5px;
     bottom: 0;
@@ -997,6 +1005,7 @@ a:hover {
     position: -webkit-relative;
     position: relative;
     width: 120%;
+    overflow: hidden;
     height: 70px;
     top: 55px;
 }
@@ -1006,6 +1015,7 @@ a:hover {
     position: -webkit-relative;
     position: relative;
     width: 120%;
+    overflow: hidden;
     height: 70px;
     top: 55px;
 }
@@ -1015,6 +1025,7 @@ a:hover {
     position: -webkit-relative;
     position: relative;
     width: 120%;
+    overflow: hidden;
     height: 70px;
     top: 55px;
     bottom: 0;
@@ -1026,6 +1037,7 @@ a:hover {
     position: -webkit-relative;
     position: relative;
     width: 120%;
+    overflow: hidden;
     height: 70px;
     top: 55px;
     bottom: 0;
@@ -1036,6 +1048,7 @@ a:hover {
   position: -webkit-relative;
     position: relative;
     width: 120%;
+    overflow: hidden;
     height: 70px;
     top: 35px;
     bottom: 0;
@@ -1091,23 +1104,25 @@ a:hover {
 /* == MAP == */
 
 #map {
-    height: 80%;
-    width: 40%;
+    height: 625px;
+    width: 330px;
     border-radius: 10px;
     border: .5px solid #bebebe;
     margin: 0 auto;
     z-index: 5;
-    position: -webkit-absolute;
-    position: absolute;
-    top: 8%;
-    right: 30%;
+    position: -webkit-relative;
+    position: relative;
+    right: 20px;
+    top: 40px;
 }
 
 .iphone-under-map {
-    position: -webkit-relative;
-    position: relative;
-    width: 50%;
+    position: -webkit-absolute;
+    position: absolute;
+    width: 45%;
     height: auto;
+    top: -5%;
+    left: 25%;
 }
 
 .marker-voiture {
@@ -1140,4 +1155,13 @@ a:hover {
 
 .fade {
     opacity: 0;
+}
+
+svg {
+  overflow: hidden;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }

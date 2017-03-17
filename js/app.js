@@ -18,7 +18,7 @@ $("#promo a[href^='#offre_promo']").on('click', function(e) {
 
 });
 
-$("#decouvrir a[href^='#comment_ca_marche']").on('click', function(e) {
+$("#decouvrir a[href^='#je_decouvre']").on('click', function(e) {
 
    // prevent default anchor click behavior
    e.preventDefault();
