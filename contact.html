@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact - TOTEM Mobi</title>
+    <meta name="keywords" content="Se déplacer à Marseille, location voiture Marseille,TOTEM mobi, Twizy, voiture électrique, véhicule électrique, location pas chère, Marseille, mobilité urbaine, location de voitures électriques, location de Twizy, autopartage, auto-partage, voiture libre">
+    <meta name="description" content="Accueil du site TOTEM mobi, location de véhicules électriques Renault Twizy à courte et moyenne durée">
+    <!-- les links ci-dessous sont pour le style, ne pas toucher-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- == ici commence le contenu visuel de la page ==-->
+    <div class="container-fluid page-contact">
+      <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+        <!-- DEBUT en-tête de page-->
+        <header class="header-contact">
+
+
+          <!-- DEBUT barre de NAVIGATION-->
+          <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+                  <!-- LOGO TOTEM mobi -->
+                  <a class="navbar-brand" href="index.html"><img src="images/logo_totem_mobi.png" alt="logo totem mobi" class="img-logo-navbar"></a>
+              </div>
+
+              <!-- MENU principal-->
+              <ul class="nav navbar-nav">
+                  <li><a href="index.html">Qui sommes-nous ?</a></li>
+                  <!--  <li><a href="#promos">Offre promos</a></li> -->
+                  <li><a href="entreprises.html">Vous êtes une entreprise</a></li>
+                  <li><a href="annonceurs.html">Vous êtes un annonceur</a></li>
+              </ul>
+
+              <!-- MENU de droite/ connexion-->
+              <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="connexion.html">CONNEXION</a></li>
+                      <li><a href="inscription.html">DEVENIR MEMBRE</a></li>
+                      <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plus... <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              <li class="active"><a href="contact.html">Contact</a></li>
+                              <li><a href="faq.html">FAQ</a></li>
+                              <li><a href="id_mdp.html">Changer de mot de passe/identifiants</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+          <!-- FIN barre de NAVIGATION-->
+
+        </header>
+        <!-- FIN en-tête de page-->
+
+
+<!-- DEBUT SECTION CONTACT-->
+        <div class="container-fluid section-contact">
+            <div class="container">
+
+            <!-- Formulaire de contact -->
+              <div class="row">
+                <div class="col-sm-6 formulaire_contact">
+                  <h4><span class="texte_en_vert">Une question ? Envoyez-nous votre message :</span></h4>
+                      <form class="form-group" action="#" method="post">
+                        <label for="prenom">PRENOM <span class="texte_en_rouge">*</span></label>
+                        <input type="text" name="prenom" id="prenom" class="form-control">
+                        <label for="nom">NOM <span class="texte_en_rouge">*</span></label>
+                        <input type="text" name="nom" id="nom" class="form-control">
+                        <label for="tel">TELEPHONE <span class="texte_en_rouge">*</span></label>
+                        <input type="tel" name="tel" id="tel" class="form-control">
+                        <label for="email">EMAIL <span class="texte_en_rouge">*</span></label>
+                        <input type="email" name="email" id="email" class="form-control">
+                        <label for="commentaire">COMMENTAIRE <span class="texte_en_rouge">*</span></label>
+                        <textarea type="text" name="commentaire" id="commentaire" class="form-control" rows="10"></textarea>
+
+                        <button type="submit" class="btn btn-default boutton_envoyer">Envoyer</button>
+                      </form>
+                </div> <!-- FIN formulaire de contact -->
+
+
+                <!-- Adresse Totem-->
+                  <div class="col-sm-6">
+
+                  <!-- Coordonnées Totem-->
+                  <div class="row">
+                    <p>TOTEM MOBI : </p>
+                    <ul>
+                      <li>9 impasse des gymnastes, 13012 Marseille</li>
+                      <li>Téléphone : 04 91 49 22 75</li>
+                      <li>E-Mail : <a href="mailto:contact@totem-mobi.fr">contact@totem-mobi.fr</a></li>
+                    </ul>
+                  </div>
+
+                    <!-- Encart Google Map-->
+                    <div class="row">
+                      <div id="mapContact" class="col-sm-12">
+                      </div>
+                    </div>
+
+                    <!-- Numéros utiles -->
+                      <div class="row">
+                        <p>Numéros utiles :</p>
+                          <ul>
+                            <li>En cas de problème avec <span class="texte_en_vert">votre réservation</span> : <br>
+                              Bureau de TOTEM mobi : 04 91 49 22 75</li>
+                            <li>Pour <span class="texte_en_vert">tout problèmes (sauf     électriques)</span> : <br>
+                                Assistance de la "MACIF" : ​0800 774 774</li>
+                            <li>En cas de problème de <span class="texte_en_vert">panne d'énergie</span> : <br>
+                              Assistance de "Renault" : 0 800 05 15 15</li>
+                          </ul>
+                      </div>
+
+                    <!-- Telechargement assistance technique-->
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <button type="button" name="button" class="btn btn-primary boutton_assistance">Assistance TOTEM</button>
+                      </div>
+
+                    <!-- Logo renault/ macif-->
+                    <div class="col-sm-6">
+                      <img src="images/renault_macif.png" alt="image logo renault logo macif" class="img-responsive">
+                    </div>
+                  </div> <!-- FIN assistance ttechnique -->
+                </div> <!-- FIN adresse totem-->
+
+              </div> <!-- FIN contenu : section contact (row) -->
+
+
+            </div> <!-- FIN contenu : section contact -->
+        </div><!-- FIN section : contact -->
+
+
+        <svg viewBox="0 0 1280 70" preserveAspectRatio="none" id="headerCurve3" fill="#222222"><polygon points="1280 0 1280 70 0 70"></polygon></svg>
+
+        <!-- Pied de page/ footer-->
+        <footer class="pied_de_page_totem">
+            <div class="container-fluid text-center">
+
+                <div class="row">
+                    <p class="texte-pied_de_page_totem"><strong>Suivez totem mobi sur les réseaux sociaux</strong></p>
+                </div>
+
+                <!-- Reseaux sociaux-->
+                <div class="row reseaux_sociaux">
+
+                    <!-- Facebook-->
+                    <a href="http://www.facebook.com/totemmobi"><i class="fa fa-facebook"></i></a>
+
+                    <!-- Twitter-->
+                    <a href="https://twitter.com/TOTEMmobi?lang=fr"><i class="fa fa-twitter"></i></a>
+
+                    <!-- Instagram-->
+                    <a href="https://www.instagram.com/totem.mobi/"><i class="fa fa-instagram"></i></a>
+
+                    <!-- Linkedin-->
+                    <a href="https://www.linkedin.com/company/totem-mobi"><i class="fa fa-linkedin"></i></a>
+
+                    <!-- Mail-->
+                    <a href="mailto:contact@totem-mobi.fr"><i class="fa fa-envelope-o"></i></a>
+
+                </div>
+                <!-- FIN Reseaux sociaux-->
+
+                <div class="row">
+                    <p>© TOTEM mobi</p>
+                </div>
+                <div class="row">
+                    <a href="entreprises.html">Vous êtes une entreprise</a>
+                </div>
+                <div class="row">
+                    <a href="annonceurs.html">Vous êtes un annonceur</a>
+                </div>
+            </div>
+        </footer>
+        <!-- FIN Pied de page/ footer-->
+
+
+
+    </div>
+    <!-- == FIN du contenu visuel de la page ==-->
+
+    <!-- Les scripts ci-dessous sert pour les animations,  ne pas toucher! -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmnhKFyf85HZ9fYSzSWszql6iPTmVpKt8&allowfullscreen&callback=initMapContact"></script>
+    <script src="js/google-map-contact.js" charset="utf-8"></script>
+</body>
+
+</html>
+
+<!-- ici commence le contenu visuel de la page-->
