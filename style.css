@@ -91,11 +91,13 @@ header {
 /* == DEBUT INTRO == */
 
 .bg-intro {
+    -webkit-background-size: 2650px 1440px;
     background-image: url(images/bg-intro-04.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
+
 }
 
 .img-logo_intro {
@@ -118,7 +120,10 @@ header {
 }
 
 .well {
-
+  position: -webkit-relative;
+    position: relative;
+    z-index: 5;
+    margin-top: 5%;
     background-color: rgba(0, 0, 0, 0.5);
     color: black;
     padding-bottom: 50px;
