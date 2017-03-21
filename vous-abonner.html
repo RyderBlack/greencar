@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Vous abonner - TOTEM Mobi</title>
+    <title>Vous inscrire - TOTEM Mobi</title>
     <!-- les links ci-dessous sont pour le style, ne pas toucher-->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,27 +22,37 @@
             <!-- DEBUT en-tête de page-->
 
             <!-- DEBUT barre de NAVIGATION-->
-            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                    <a class="navbar-brand" href="#"><img src="images/logo-totem.png" alt="logo totem mobi"></a>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- LOGO TOTEM mobi -->
+                    <a class="navbar-brand" href="index.html"><img src="images/logo_totem_mobi.png" alt="logo totem mobi" class="img-logo-navbar"></a>
                 </div>
+
+                <!-- MENU principal-->
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Qui sommes-nous ?</a></li>
+                    <!--  <li><a href="#promos">Offre promos</a></li> -->
+                    <li><a href="entreprises.html">Vous êtes une entreprise</a></li>
+                    <li><a href="annonceurs.html">Vous êtes un annonceur</a></li>
+                </ul>
+
+                <!-- MENU de droite/ connexion-->
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Qui sommes-nous ?</a></li>
-                        <li><a href="entreprises.html">Vous êtes une entreprise</a></li>
-                        <li><a href="annonceurs.html">Vous êtes un annonceur</a></li>
-                        <!--  <li><a href="#blog">Le Blog de TOTEM</a></li> -->
+                        <!--    <li><a href="connexion.html">CONNEXION</a></li> -->
+                        <li class="active"><a href="inscription.html">DEVENIR MEMBRE</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plus... <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="contact.html">Contact</a></li>
                                 <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="id_mdp.html">Changer de mot de passe/identifiants</a></li>
+                                <li><a href="http://client.totem.mobi/">Changer de mot de passe/identifiants</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -58,8 +68,8 @@
 
               <!-- Titre Vous Abonner -->
                 <div class="row text-center">
-                    <h1><span class="texte_en_vert" style="font-family:'housepaint';font-size:52px;">VOUS ABONNER</span></h1>
-                    <a href="conducteurs.html"><h3>Cliquez ici afin de consultez les tarifs </h3></a>
+                    <h1><span class="texte_en_vert" style="font-family:'housepaint';font-size:52px;">VOUS INSCRIRE</span></h1>
+                    <a href="index.html#tarifs"><h3>Cliquez ici afin de consultez les tarifs </h3></a>
                 </div>
 
                 <!-- Encart Calinda -->
@@ -72,8 +82,6 @@
 
             </div> <!-- FIN contenu : section calinda -->
         </div> <!-- FIN section : calinda -->
-
-      <svg viewBox="0 0 1280 70" preserveAspectRatio="none" id="headerCurve3" fill="#222222"><polygon points="1280 0 1280 70 0 70"></polygon></svg>
 
         <!-- Pied de page/ footer-->
         <footer class="pied_de_page_totem">
@@ -112,6 +120,9 @@
                 </div>
                 <div class="row">
                     <a href="annonceurs.html">Vous êtes un annonceur</a>
+                </div>
+                <div class="row">
+                    <a href="contact.html">Nous contacter</a>
                 </div>
             </div>
         </footer>

@@ -27,27 +27,37 @@
             <!-- DEBUT en-tête de page-->
 
             <!-- DEBUT barre de NAVIGATION-->
-            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="images/logo-totem.png" alt="logo totem mobi"></a>
+
+                    <!-- LOGO TOTEM mobi -->
+                    <a class="navbar-brand" href="index.html"><img src="images/logo_totem_mobi.png" alt="logo totem mobi" class="img-logo-navbar"></a>
                 </div>
+
+                <!-- MENU principal-->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Qui sommes-nous ?</a></li>
+                    <!--  <li><a href="#offre_promo">Offre promos</a></li> -->
+                    <li><a href="entreprises.html">Vous êtes une entreprise</a></li>
+                    <li><a href="annonceurs.html">Vous êtes un annonceur</a></li>
+                </ul>
+
+                <!-- MENU de droite/ connexion-->
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Qui sommes-nous ?</a></li>
-                        <li><a href="entreprises.html">Vous êtes une entreprise</a></li>
-                        <li><a href="annonceurs.html">Vous êtes un annonceur</a></li>
-                        <!--  <li><a href="#blog">Le Blog de TOTEM</a></li> -->
+                        <!--    <li><a href="connexion.html">CONNEXION</a></li> -->
+                    <li><a href="vous-abonner.html">DEVENIR MEMBRE</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plus... <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="contact.html">Contact</a></li>
                                 <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="id_mdp.html">Changer de mot de passe/identifiants</a></li>
+                                <li><a href="http://client.totem.mobi/">Changer de mot de passe/identifiants</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -246,13 +256,14 @@
         <!-- DEBUT Fonctionnement Appli-->
         <div class="container-fluid section-fonctionnement-appli">
 
+
             <!-- Titre Fonctionnement Appli-->
             <div class="row">
                 <h3 class="text-center titre-fonctionnement-appli"><span class="texte_en_vert">L'APPLI TOTEM.mobi : </span></h3>
             </div>
 
             <div class="row">
-                <div class="col-sm-3 texte-fonctionnement-appli text-right fade">
+                <div class="col-sm-3 col-md-3 texte-fonctionnement-appli text-right fade">
 
                     <!-- TWIZY VERT-->
                     <div class="row">
@@ -313,20 +324,18 @@
                 <!-- FIN Info partie gauche appli iphone -->
 
                 <!-- Google MAP -->
-                <div class="col-sm-6 text-center map-iphone fade">
-                    <img src="images/iphone-6.png" alt="demo application map totem mobi" class="iphone-under-map img-responsive">
-                    <div id="map" class="text-center">Veuillez patienter pendant le chargement de la carte...
-                    </div>
+                <div class="col-sm-6 col-md-6 text-center fade">
+                    <img src="images/google-phone-totem-app.png" alt="demo application map totem mobi" class="phone-app img-responsive">
                 </div>
                 <!-- FIN Google MAP -->
 
-                <div class="col-sm-3 texte-fonctionnement-appli text-left fade">
+                <div class="col-sm-3 col-md-3 texte-fonctionnement-appli text-left fade">
                     <!-- TWIZY ROUGE-->
                     <div class="row">
                         <div class="col-xs-3">
                             <img src="images/voiture-rouge.png" alt="PICTO ROUGE" class="img-responsive marker-voiture">
                         </div>
-                        <div class="col-xs-7">
+                        <div class="col-xs-8">
                             <p><span class="texte_en_rouge">Twizy rouge</span> : Le véhicule est libre et dispose d'une autonomie inférieure à 18 Km.</p>
                         </div>
                     </div>
@@ -336,7 +345,7 @@
                         <div class="col-xs-3">
                             <img src="images/voiture-violet.png" alt="PICTO VIOLET" class="img-responsive marker-voiture">
                         </div>
-                        <div class="col-xs-7">
+                        <div class="col-xs-8">
                             <p><span class="texte_en_violet">Twizy violet</span> : Ceci est votre réservation en cours.</p>
                         </div>
                     </div>
@@ -346,7 +355,7 @@
                         <div class="col-xs-3">
                             <img src="images/voiture-grise.png" alt="PICTO GRIS" class="img-responsive marker-voiture">
                         </div>
-                        <div class="col-xs-7">
+                        <div class="col-xs-8">
                             <p><span class="texte_en_gris">Twizy grise</span> : Ce véhicule est déjà réservé.</p>
                         </div>
                     </div>
@@ -383,7 +392,7 @@
 
             <!-- Bouton memo TOTEM Mobi -->
             <div class="row text-center fade">
-                <button type="button" name="button" class="btn btn-default bouton-s_abonner">MEMO APP TOTEM MOBI</button>
+                <button type="button" name="button" class="btn btn-default bouton-s_abonner"><a href="telechargement/memo_totem.pdf" download="memo_totem">MEMO APP TOTEM MOBI</a></button>
             </div>
 
             <!-- Telecharger pour Iphone et Android -->
@@ -393,239 +402,303 @@
                 <button type="button" name="button" class="btn btn-primary bouton-telecharger"><a href="https://itunes.apple.com/fr/app/totem.mobi/id778512885?mt=8">iOS</a></button>
             </div>
 
+            <!-- div container enlever pour le moment -->
+            <!-- FIN Contenu de la Section : Fonctionnement Appli-->
+
+
         </div>
-        <!-- FIN Contenu de la Section : Fonctionnement Appli-->
-    </div>
-    <!-- FIN Section : Fonctionnement Appli-->
+        <!-- FIN Section : Fonctionnement Appli-->
 
 
-
-
-    <!-- DEBUT SECTION TARIFS -->
-    <div class="container-fluid section-tarifs">
-        <div class="container">
-            <div class="row">
-                <h3 class="titre-tarifs text-center"><span class="texte_en_vert">Combien ça coûte ?</span></h3>
-            </div>
-            <div class="row texte-tarifs fade">
-
-                <!-- Texte section instructions -->
-                <div class="col-md-6">
-                    <h3>Economiser de l'argent</h3>
-                    <ul class="sans-puce">
-                        <li>Je ne paye mon véhicule que le temps de ma réservation.</li>
-                        <li>Je ne dépense rien de plus que ma location.</li>
-                        <li>Je profite du stationnement gratuit et je n'ai aucune autre charge (assurance, maintenance...).</li>
-                    </ul>
-
-                    <h3>Les tarifs</h3>
-                    <ul class="sans-puce">
-                        <li>19€ TTC de frais d'inscription</li>
-                        <li>4€ TTC par mois (frais fixes)</li>
-                        <li>1€ TTC par réservation </li>
-                        <li>1€ TTC le 1/4 d'heure de location (à partir de la réservation)</li>
-                        <li>Stationnement <span class="texte_en_vert">GRATUIT</span> !</li>
-                    </ul>
-
+        <!-- DEBUT SECTION TARIFS -->
+        <div class="container-fluid section-tarifs" id="tarifs">
+            <div class="container">
+                <div class="row">
+                    <h3 class="titre-tarifs text-center"><span class="texte_en_vert">Combien ça coûte ?</span></h3>
                 </div>
+                <div class="row texte-tarifs fade">
 
-                <!-- Image section instructions -->
-                <div class="col-md-6">
-                    <img src="images/img-05.jpg" alt="image twizy 05" class="img-responsive img-rounded">
-                </div>
-            </div>
-            <!-- FIN Texte section tarifs -->
+                    <!-- Texte section instructions -->
+                    <div class="col-md-6">
+                        <h3>Economiser de l'argent</h3>
+                        <ul class="sans-puce">
+                            <li>Je ne paye mon véhicule que le temps de ma réservation.</li>
+                            <li>Je ne dépense rien de plus que ma location.</li>
+                            <li>Je profite du stationnement gratuit et je n'ai aucune autre charge (assurance, maintenance...).</li>
+                        </ul>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row text-center">
-                        <h3>Le bonus recharge</h3>
+                        <h3>Les tarifs</h3>
+                        <ul class="sans-puce">
+                            <li>19€ TTC de frais d'inscription</li>
+                            <li>4€ TTC par mois (frais fixes)</li>
+                            <li>1€ TTC par réservation </li>
+                            <li>1€ TTC le 1/4 d'heure de location (à partir de la réservation)</li>
+                            <li>Stationnement <span class="texte_en_vert">GRATUIT</span> !</li>
+                        </ul>
+
                     </div>
-                    <div class="row">
+
+                    <!-- Image section instructions -->
+                    <div class="col-md-6">
+                        <img src="images/img-05.jpg" alt="image twizy 05" class="img-responsive img-rounded">
+                    </div>
+                </div>
+                <!-- FIN Texte section tarifs -->
+
+                <!-- partie Bonus Recharge -->
+                <div class="row texte-bonus-recharge">
+                    <div class="col-md-6 fade">
+                        <h3>Le bonus recharge</h3>
                         <p>Une Twizy mise en charge dans l'un de nos Tipi / stations = <strong>une remise</strong> sur votre facture (jusqu'à 3€ TTC de remise). Les remises sont désormais automatisées.</p>
                         <p>La remise est comptabilisée automatiquement en fonction de l'autonomie du véhicule au moment de la mise en charge en fin de réservation.</p>
                     </div>
-                </div>
 
-                <!-- Bonus Recharge -->
-                <div class="col-md-6 text-center bonus-recharge fade">
-                    <h3><strong><span class="texte_en_orange">Exemple de BONUS RECHARGE</span></strong></h3>
+                    <!-- EXEMPLE Bonus Recharge -->
+                    <div class="col-md-6 text-center bonus-recharge fade">
+                        <h4><strong>Exemple de BONUS RECHARGE</strong></h4>
 
-                    <div class="row text-center">
-                        <div class="col-md-4 image-batterie">
-                            <img src="images/batterie.gif" alt="batterie autonomie">
+                        <div class="row text-center">
+                            <div class="col-sm-4 col-md-3 image-batterie">
+                                <img src="images/batterie.gif" alt="batterie autonomie">
+                            </div>
+                            <div class="col-sm-8 col-md-9 exemple-bonus-recharge">
+                                <h5><span class="texte_en_vert">1 barres de charge = jusqu'à 3€ remise</span></h5>
+                                <h5><span class="texte_en_orange">3 barres de charge = jusqu'à 2€ remise</span></h5>
+                                <h5><span class="texte_en_rouge">7 barre de charge = jusqu'à 1€ remise</span></h5>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <h5>1 barres de charge = jusqu'à 3€ remise</h5>
-                            <h5>3 barres de charge = jusqu'à 2€ remise</h5>
-                            <h5>7 barre de charge = jusqu'à 1€ remise</h5>
+                        <!-- FIN contenu (barres) : bonus recharge -->
+                    </div>
+                    <!-- FIN EXEMPLE bonus recharge -->
+                </div>
+                <!-- FIN partie bonus recharge -->
+
+
+            </div>
+            <!-- FIN contenu : section tarifs -->
+
+        </div>
+        <!-- FIN section : tarifs -->
+
+
+        <!-- DEBUT section utilisateurs -->
+        <div class="container-fluid section-utilisateurs-stationnement">
+            <div class="container">
+                <div class="row text-center fade">
+
+                  <!-- DEBUT partie utilisateurs -->
+                    <div class="col-md-6 partie-utilisateurs">
+                        <div class="row">
+                            <h3 class="text-center titre-fonctionnement-appli fade"><span class="texte_en_vert">Qui peut utiliser le service ?</span></h3>
+                        </div>
+                        <div class="row">
+                            <h3 class="texte_en_vert">Âge minimum</h3>
+                            <p>L’inscription au service TOTEM est accessible à toute personne majeure.</p>
+                        </div>
+                        <div class="row">
+                            <h3 class="texte_en_vert">Permis de conduire</h3>
+                            <p>Afin de profiter du service TOTEM mobi, vous devez disposer d’un permis de conduire B en cours de validité. Les personnes disposant d’un permis jeune conducteur (obtention du permis B depuis moins de 2 ou 3 ans) peuvent utiliser
+                                nos véhicules.</p>
+                        </div>
+                        <div class="row">
+                            <img src="images/id_card.jpg" alt="id card" class="id_card">
                         </div>
                     </div>
-                    <!-- FIN contenu (barres) : bonus recharge -->
-                </div>
-                <!-- FIN bonus recharge -->
-            </div>
+                    <!-- FIN partie utilisateurs-->
 
-            <div class="row text-center fade">
-                <h4><span class="texte_en_vert">Découvrez notre fiche Mémo afin de mieux comprendre le fonctionnement et l'utilisation de TOTEM mobi </span></h4>
-                <!-- Bouton memo TOTEM Mobi -->
+
+                    <!-- DEBUT partie stationnement -->
+                    <div class="col-md-6 partie-stationnement">
+                        <div class="row">
+                            <h3 class="text-center titre-fonctionnement-appli fade"><span class="texte_en_vert">Stationnement et points de charge</span></h3>
+                        </div>
+
+                        <!-- stationnement -->
+                        <div class="row text-center">
+
+                            <div class="row">
+                                <div class="col-md-3 picto-stationnement">
+                                    <img src="images/stationnement.png" alt="image stationnement totem">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="texte_en_vert">Stationnement</h3>
+                                    <p>Vous avez la possibilité de garer le véhicule soit sur des places de parking de stationnement en surface (le stationnement est gratuit pour les utilisateurs de TOTEM, vous ne vous souciez pas du parcmètre) soit sur nos stations et tipis. Attention : le stationnement dans les parking sous terrain est formellement interdit et est passible d’une pénalité.</p>
+                                </div>
+                                <!-- FIN texte stationnement -->
+                            </div>
+                        </div>
+                        <!-- FIN stationnement -->
+
+                        <!-- station publique -->
+                        <div class="row">
+
+                            <div class="row">
+                                <div class="col-md-3 picto-stationnement">
+                                    <img src="images/station-publique.png" alt="image station publique totem">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="texte_en_vert">Station publique</h3>
+                                    <p>Située hors zone verte, elles permettent l’extension du service. Obligation de garer son véhicule et de le mettre en charge.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN station publique -->
+
+                        <!-- station privee -->
+                        <div class="row">
+
+                            <div class="row">
+                                <div class="col-md-3 picto-stationnement">
+                                    <img src="images/station-privee.png" alt="image station privee totem">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="texte_en_vert">Station privee</h3>
+                                    <p>Située hors zone verte, elles permettent l’extension du service. Celle-ci n'est disponible uniquement pour les salariés de l’entreprise et visiteurs (clients, fournisseurs, candidats…).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- station privee -->
+
+                        <!-- station tipi -->
+                        <div class="row">
+
+                            <div class="row">
+                                <div class="col-md-3 picto-stationnement">
+                                    <img src="images/tipi.png" alt="image tipi totem">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="texte_en_vert">TIPI</h3>
+                                    <p>Point de recharge situé en zone verte, ce sont les commerçants qui mettent à disposition une prise afin de recharger le véhicule.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- station tipi-->
+
+                    </div>
+                    <!-- FIN partie stationnement -->
+
+                </div>
+                <!-- FIN contenu section utilisateurs-stationnement -->
+            </div>
+            <!-- FIN conteneur section utilisateurs-stationnement -->
+        </div>
+        <!-- FIN section utilisateurs-stationnement -->
+
+
+        <!-- DEBUT section utilisation-->
+        <div class="container-fluid section-utilisation">
+            <div class="container">
                 <div class="row">
-                    <button type="button" name="button" class="btn btn-default bouton-s_abonner">MEMO APP TOTEM MOBI</button>
+                    <h3 class="text-center titre-utilisation"><span class="texte_en_vert">Comment utiliser TOTEM ?</span></h3>
                 </div>
+                <p class="text-center">Réservation</p>
+                <p class="text-center">Prise en main du véhicule</p>
             </div>
-
         </div>
-        <!-- FIN contenu : section tarifs -->
-
-    </div>
-    <!-- FIN section : tarifs -->
+        <!-- FIN section utilisation -->
 
 
-    <!-- DEBUT section utilisateurs -->
-    <div class="container-fluid section-utilisateurs">
-        <div class="container">
-            <div class="row">
-                <h3 class="text-center titre-fonctionnement-appli fade"><span class="texte_en_vert">Qui peut utiliser le service ?</span></h3>
-            </div>
+        <!-- DEBUT TEMOIGNAGES-->
+        <div class="container-fluid section-temoignages">
+            <div class="container">
 
-            <div class="row text-center fade">
-                <div class="col-sm-6">
-                    <div class="row">
-                        <h3 class="texte_en_vert">Âge minimum</h3>
-                        <p>L’inscription au service TOTEM est accessible à toute personne majeure.</p>
-                    </div>
-                    <div class="row">
-                        <h3 class="texte_en_vert">Permis de conduire</h3>
-                        <p>Afin de profiter du service TOTEM mobi, vous devez disposer d’un permis de conduire B en cours de validité. Les personnes disposant d’un permis jeune conducteur (obtention du permis B depuis moins de 2 ou 3 ans) peuvent utiliser
-                            nos véhicules.</p>
-                    </div>
+                <!-- Titre Temoignages-->
+                <div class="row">
+                    <h3 class="text-center titre-fonctionnement-appli fade"><span class="texte_en_vert">Témoignages</span></h3>
                 </div>
 
-                <div class="col-sm-6">
-                    <img src="images/id_card.jpg" alt="id card" class="img-responsive id_card">
-                </div>
-            </div>
-            <!-- FIN texte section utilisateurs -->
-        </div>
-        <!-- FIN contenu section utilisateurs -->
+                <div class="row text-center">
 
-    </div>
-    <!-- FIN section utilisateurs -->
+                    <div class="testimonial-slider owl-carousel fade">
 
-
-    <!-- DEBUT section utilisation-->
-    <div class="container-fluid section-utilisation">
-        <div class="container">
-            <div class="row">
-                <h3 class="text-center titre-utilisation"><span class="texte_en_vert">Comment utiliser TOTEM ?</span></h3>
-            </div>
-            <p class="text-center">Réservation</p>
-            <p class="text-center">Prise en main du véhicule</p>
-        </div>
-
-    </div>
-    <!-- FIN section utilisation -->
-
-
-    <!-- DEBUT TEMOIGNAGES-->
-    <div class="container-fluid section-temoignages">
-        <div class="container">
-
-            <!-- Titre Temoignages-->
-            <div class="row">
-                <h3 class="text-center titre-fonctionnement-appli fade"><span class="texte_en_vert">Témoignages</span></h3>
-            </div>
-
-            <div class="row text-center">
-
-                <div class="testimonial-slider owl-carousel fade">
-
-                    <!-- Temoignages 01-->
-                    <div class="testimonial">
-                        <div class="description">
-                            <p> Avec Totem je ne suis plus en retard. Mes déplacements sont fun, et agréables et mes clients et amis apprecient le coté ecolo...#ramassercestsexy <br>Eddie.P</p>
+                        <!-- Temoignages 01-->
+                        <div class="testimonial">
+                            <div class="description">
+                                <p> Avec Totem je ne suis plus en retard. Mes déplacements sont fun, et agréables et mes clients et amis apprecient le coté ecolo...#ramassercestsexy <br>Eddie.P</p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- FIN TEMOIGNAGES 01-->
+                        <!-- FIN TEMOIGNAGES 01-->
 
-                    <!-- Temoignages 02-->
-                    <div class="testimonial">
-                        <div class="description">
-                            <p>TOTEM c’est plus qu’un moyen de transport, c’est un super projet, un projet dans le futur. De plus il a utilité très forte pour la mobilité du territoire.  Je l’utilise pour me déplacer le week-end ou pour me rendre dans les lieux mal desservies. <br>Alain B.</p>
+                        <!-- Temoignages 02-->
+                        <div class="testimonial">
+                            <div class="description">
+                                <p>TOTEM c’est plus qu’un moyen de transport, c’est un super projet, un projet dans le futur. De plus il a utilité très forte pour la mobilité du territoire. Je l’utilise pour me déplacer le week-end ou pour me rendre dans
+                                    les lieux mal desservies. <br>Alain B.</p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- FIN TEMOIGNAGES 02-->
+                        <!-- FIN TEMOIGNAGES 02-->
 
-                    <!-- Temoignages 03-->
-                    <div class="testimonial">
-                        <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus diam massa, vel tincidunt purus pellentesque non. Phasellus feugiat at ex id euismod. Quisque dictum varius mi et interdum. Aenean. </p>
+                        <!-- Temoignages 03-->
+                        <div class="testimonial">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus diam massa, vel tincidunt purus pellentesque non. Phasellus feugiat at ex id euismod. Quisque dictum varius mi et interdum. Aenean. </p>
+                            </div>
                         </div>
+                        <!-- FIN TEMOIGNAGES 03-->
+
                     </div>
-                    <!-- FIN TEMOIGNAGES 03-->
-
-
+                    <!-- FIN slider TEMOIGNAGES-->
 
                 </div>
-                <!-- FIN slider TEMOIGNAGES-->
-
+                <!-- FIN (row) partie texte/slider TEMOIGNAGES-->
             </div>
-            <!-- FIN (row) partie texte/slider TEMOIGNAGES-->
+            <!-- FIN contenu TEMOIGNAGES-->
+
         </div>
-        <!-- FIN contenu TEMOIGNAGES-->
+        <!-- FIN section TEMOIGNAGES-->
 
-    </div>
-    <!-- FIN section TEMOIGNAGES-->
-
-    <div class="row text-center">
-        <a href="https://itunes.apple.com/fr/app/totem.mobi/id778512885?mt=8"><button type="button" name="button" class="btn btn-primary bouton-telecharger">iOS</button></a>
-        <a href="https://play.google.com/store/apps/details?id=air.air.TotemAndroid"><button type="button" name="button" class="btn btn-success bouton-telecharger">Android</button></a>
-    </div>
-
-
-
-
-    <!-- Pied de page/ footer-->
-    <footer class="pied_de_page_totem">
-        <div class="container-fluid text-center">
-
-            <div class="row">
-                <p class="texte-pied_de_page_totem"><strong>Suivez totem mobi sur les réseaux sociaux</strong></p>
-            </div>
-
-            <!-- Reseaux sociaux-->
-            <div class="row reseaux_sociaux">
-
-                <!-- Facebook-->
-                <a href="http://www.facebook.com/totemmobi"><i class="fa fa-facebook"></i></a>
-
-                <!-- Twitter-->
-                <a href="https://twitter.com/TOTEMmobi?lang=fr"><i class="fa fa-twitter"></i></a>
-
-                <!-- Instagram-->
-                <a href="https://www.instagram.com/totem.mobi/"><i class="fa fa-instagram"></i></a>
-
-                <!-- Linkedin-->
-                <a href="https://www.linkedin.com/company/totem-mobi"><i class="fa fa-linkedin"></i></a>
-
-                <!-- Mail-->
-                <a href="mailto:contact@totem-mobi.fr"><i class="fa fa-envelope-o"></i></a>
-
-            </div>
-            <!-- FIN Reseaux sociaux-->
-
-            <div class="row">
-                <p>© TOTEM mobi</p>
-            </div>
-            <div class="row">
-                <a href="entreprises.html">Vous êtes une entreprise</a>
-            </div>
-            <div class="row">
-                <a href="annonceurs.html">Vous êtes un annonceur</a>
-            </div>
+        <div class="row text-center boutons-avant-pied_de_page">
+            <a href="https://itunes.apple.com/fr/app/totem.mobi/id778512885?mt=8"><button type="button" name="button" class="btn btn-primary bouton-telecharger">iOS</button></a>
+            <a href="https://play.google.com/store/apps/details?id=air.air.TotemAndroid"><button type="button" name="button" class="btn btn-success bouton-telecharger">Android</button></a>
         </div>
-    </footer>
-    <!-- FIN Pied de page/ footer-->
+
+
+
+
+        <!-- Pied de page/ footer-->
+        <footer class="pied_de_page_totem">
+            <div class="container-fluid text-center">
+
+                <div class="row">
+                    <p class="texte-pied_de_page_totem"><strong>Suivez totem mobi sur les réseaux sociaux</strong></p>
+                </div>
+
+                <!-- Reseaux sociaux-->
+                <div class="row reseaux_sociaux">
+
+                    <!-- Facebook-->
+                    <a href="http://www.facebook.com/totemmobi"><i class="fa fa-facebook"></i></a>
+
+                    <!-- Twitter-->
+                    <a href="https://twitter.com/TOTEMmobi?lang=fr"><i class="fa fa-twitter"></i></a>
+
+                    <!-- Instagram-->
+                    <a href="https://www.instagram.com/totem.mobi/"><i class="fa fa-instagram"></i></a>
+
+                    <!-- Linkedin-->
+                    <a href="https://www.linkedin.com/company/totem-mobi"><i class="fa fa-linkedin"></i></a>
+
+                    <!-- Mail-->
+                    <a href="mailto:contact@totem-mobi.fr"><i class="fa fa-envelope-o"></i></a>
+
+                </div>
+                <!-- FIN Reseaux sociaux-->
+
+                <div class="row">
+                    <p>© TOTEM mobi</p>
+                </div>
+                <div class="row">
+                    <a href="entreprises.html">Vous êtes une entreprise</a>
+                </div>
+                <div class="row">
+                    <a href="annonceurs.html">Vous êtes un annonceur</a>
+                </div>
+                <div class="row">
+                    <a href="contact.html">Nous contacter</a>
+                </div>
+            </div>
+        </footer>
+        <!-- FIN Pied de page/ footer-->
 
 
     </div>
@@ -633,6 +706,7 @@
 
     <!-- Les scripts ci-dessous sert pour les animations,  ne pas toucher! -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
     <script src="js/animation-on-scroll.js" charset="utf-8"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>

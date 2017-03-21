@@ -38,17 +38,6 @@ $("#decouvrir a[href^='#je_decouvre']").on('click', function(e) {
 
 });
 
-$(function() {
-    let introHeight = document.getElementById('intro').offsetHeight;
-    $(window).scroll(function() { //Au scroll dans la fenetre on déclenche la fonction
-        if ($(this).scrollTop() > introHeight - 8) { //quand la fin de la main page est atteinte.
-            $('#navigation').addClass("fixedNavbar"); //on ajoute la classe "fixNavigation" à <div id="navigation">
-        } else {
-            $('#navigation').removeClass("fixedNavbar"); //sinon on retire la classe "fixNavigation" à <div id="navigation">
-        }
-    });
-});
-
 if ($('#back-to-top').length) {
     var scrollTrigger = 100, // px
         backToTop = function () {

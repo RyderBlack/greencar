@@ -83,7 +83,7 @@ function initialize() {
         icon: iconeTotem
     });
 
-}
+
 
 $(document).ready(function() {
     $.getJSON("http://tcs-dev.totem.mobi/api/Zones", function(jsonZones) {
@@ -93,6 +93,7 @@ $(document).ready(function() {
             let zones = {
                 path: google.maps.SymbolPath.CIRCLE,
                 scale: data.radius / 13,
+                clickable: false,
                 fillColor: 'green',
                 fillOpacity: 0.2,
                 strokeColor: 'green',
@@ -285,7 +286,7 @@ $(document).ready(function() {
     });
 });
 
-
+};
 /*
 var app = angular.module('google_map', []);
 app.controller('map', function($scope, $http) {
