@@ -237,6 +237,7 @@ legend>* {
 
 .texte-qu_est_ce_que_totem {
     font-size: 1.2em;
+    margin-top: 50px;
 }
 
 
@@ -266,6 +267,10 @@ legend>* {
 .numbers-icons {
     max-width: 25%;
     margin-bottom: 1em;
+}
+
+#number1, #number2, #number3, #number4  {
+  display:none;
 }
 
 
@@ -300,6 +305,7 @@ legend>* {
     padding-top: 50px;
     font-size: 18px;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 
@@ -1167,8 +1173,12 @@ a:hover {
 }
 
 .phone-app {
-    max-width: 800px;
-    padding: 0;
+    max-width: 250px;
+    min-height: 500px;
+}
+
+.texte-picto-appli {
+    font-size: 1.2em;
 }
 
 .marker-voiture {
@@ -1222,4 +1232,78 @@ svg {
 
 a, a:hover, a:active, a:focus {
   text-decoration: none;
+}
+
+/* == SLIDER  == */
+
+#slides {
+  display: none;
+  margin-bottom: 20px;
+}
+
+#slides .slidesjs-navigation {
+  margin-top:3px;
+}
+
+#slides .slidesjs-previous {
+  margin-right: 5px;
+}
+
+#slides .slidesjs-next {
+  margin-right: 5px;
+}
+
+.slidesjs-pagination {
+  margin: 6px 0 0;
+  float: right;
+  list-style: none;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(img/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+#slides a:link,
+#slides a:visited {
+  color: #333
+}
+
+#slides a:hover,
+#slides a:active {
+  color: #9e2020;
+}
+
+.image-du-slider {
+  max-width: 750px;
+}
+
+.slidesjs-navigation i {
+  color: rgb(237, 144, 4);
+  font-size: 3em;
+}
+
+.slidesjs-container {
+  margin: 0 auto;
+  max-width: 800px;
 }
