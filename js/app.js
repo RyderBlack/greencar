@@ -93,8 +93,8 @@ $(document).ready(function() {
 
 $(function() {
   $('#slides').slidesjs({
-    width: 800,
-    height: 550,
+    width: 750,
+    height: 600,
     navigation: false
   });
 });
