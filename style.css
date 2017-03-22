@@ -188,7 +188,6 @@ legend>* {
     /*display : none; */
 }
 
-
 .soustitre-offre_promo {
     font-size: 42px;
 }
@@ -269,8 +268,8 @@ legend>* {
     margin-bottom: 1em;
 }
 
-#number1, #number2, #number3, #number4  {
-  display:none;
+#number1, #number2, #number3, #number4 {
+    display: none;
 }
 
 
@@ -335,9 +334,9 @@ legend>* {
 }
 
 .texte-bonus-recharge {
-  font-size: 18px;
-  padding: 2em;
-  border-top: .5px solid lightgray;
+    font-size: 18px;
+    padding: 2em;
+    border-top: .5px solid lightgray;
 }
 
 .bonus-recharge div img {
@@ -351,8 +350,9 @@ legend>* {
 }
 
 .exemple-bonus-recharge {
-  text-align: center;
+    text-align: center;
 }
+
 
 /* == FIN SECTION TARIFS == */
 
@@ -388,16 +388,16 @@ legend>* {
 }
 
 .partie-stationnement {
-  padding-left: 50px;
-  border-left: .5px solid lightgray;
+    padding-left: 50px;
+    border-left: .5px solid lightgray;
 }
 
 .picto-stationnement {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .picto-stationnement img {
-  max-width: 85%;
+    max-width: 85%;
 }
 
 
@@ -418,7 +418,7 @@ legend>* {
     border-radius: 50px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 1.5em;
+    margin-bottom: .5em;
     font-family: "housepaint"
 }
 
@@ -1231,89 +1231,86 @@ svg {
 }
 
 a, a:hover, a:active, a:focus {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 
 /* == SLIDER  == */
 
 #slides {
-  display: none;
-  margin-bottom: 20px;
+    display: none;
+    margin-bottom: 20px;
 }
 
 #slides .slidesjs-navigation {
-  margin-top:3px;
+    margin-top: 3px;
 }
 
 #slides .slidesjs-previous {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 #slides .slidesjs-next {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .slidesjs-pagination {
-  margin: 6px 0 0;
-  float: right;
-  list-style: none;
+    margin: 6px 0 0;
+    float: right;
+    list-style: none;
 }
 
 .slidesjs-pagination li {
-  float: left;
-  margin: 0 1px;
+    float: left;
+    margin: 0 1px;
 }
 
 .slidesjs-pagination li a {
-  display: block;
-  width: 13px;
-  height: 0;
-  padding-top: 13px;
-  background-image: url(img/pagination.png);
-  background-position: 0 0;
-  float: left;
-  overflow: hidden;
-  margin-top: 20px;
+    display: block;
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+    background-image: url(img/pagination.png);
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+    margin-top: 20px;
 }
 
-.slidesjs-pagination li a.active,
-.slidesjs-pagination li a:hover.active {
-  background-position: 0 -13px
+.slidesjs-pagination li a.active, .slidesjs-pagination li a:hover.active {
+    background-position: 0 -13px
 }
 
 .slidesjs-pagination li a:hover {
-  background-position: 0 -26px
+    background-position: 0 -26px
 }
 
-#slides a:link,
-#slides a:visited {
-  color: #333
+#slides a:link, #slides a:visited {
+    color: #333
 }
 
-#slides a:hover,
-#slides a:active {
-  color: rgb(237, 144, 4);
+#slides a:hover, #slides a:active {
+    color: rgb(237, 144, 4);
 }
 
 .image-du-slider {
-  max-width: 500px;
+    max-width: 500px;
 }
 
 .slidesjs-navigation i {
-  color: rgb(237, 144, 4);
-  font-size: 3.5em;
-  margin-top: 20px;
+    color: rgb(237, 144, 4);
+    font-size: 3.5em;
+    margin-top: 20px;
 }
 
 .slidesjs-container {
-  margin: 0 auto;
-  max-width: 600px;
-  background-color: white;
-  background-color: rgb(255, 255, 255);
-  -moz-box-shadow: 7px 5px 7px 0px #9b9b9b;
-  -webkit-box-shadow: 7px 5px 7px 0px #9b9b9b;
-  -o-box-shadow: 7px 5px 7px 0px #9b9b9b;
-  box-shadow: 7px 5px 7px 0px #9b9b9b;
-  filter: progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=135, Strength=15);
-  padding: 50px;
+    margin: 0 auto;
+    max-width: 600px;
+    min-height: 600px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 12px 8px -6px gray;
+    -moz-box-shadow: 0 12px 8px -6px gray;
+    box-shadow: 0 12px 8px -6px gray;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=135, Strength=15);
+    padding: 5em;
 }
