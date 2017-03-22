@@ -81,7 +81,7 @@ $(document).ready(function() {
     });
 
     $(".partenaires-slider").owlCarousel({
-        items: 3,
+        items: 4,
         itemsDesktop: [1000, 2],
         itemsDesktopSmall: [979, 2],
         itemsTablet: [550, 1],
@@ -93,8 +93,8 @@ $(document).ready(function() {
 
 $(function() {
   $('#slides').slidesjs({
-    width: 800,
-    height: 300,
+    width: 700,
+    height: 400,
     navigation: false
   });
 });

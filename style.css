@@ -1,4 +1,4 @@
-.page-accueil {
+    .page-accueil {
     overflow: hidden;
 }
 
@@ -94,6 +94,9 @@ header {
 .bg-intro {
     -webkit-background-size: 2650px 1440px;
     background-image: url(images/bg-intro-04.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -137,7 +140,7 @@ legend>* {
 }
 
 .bouton {
-    font-family: "Lato", helvetica, sans-serif;
+    font-family: "Lato", "Helvetica Neue", sans-serif;
     font-size: 20px;
 }
 
@@ -562,6 +565,7 @@ legend>* {
 /*ici Style des logos réseaux sociaux */
 
 .reseaux_sociaux {
+    z-index: 5;
     padding-bottom: 20px;
 }
 
@@ -1202,7 +1206,6 @@ a:hover {
     right: 50px;
     top: 0;
     margin: 0;
-    margin-top: 1em;
 }
 
 
@@ -1293,8 +1296,8 @@ a, a:hover, a:active, a:focus {
     color: rgb(237, 144, 4);
 }
 
-.image-du-slider {
-    max-width: 500px;
+.image-du-slider-utilisation {
+    max-width: 600px;
 }
 
 .slidesjs-navigation i {
@@ -1305,12 +1308,21 @@ a, a:hover, a:active, a:focus {
 
 .slidesjs-container {
     margin: 0 auto;
-    max-width: 600px;
-    min-height: 600px;
-    background-color: rgb(255, 255, 255);
-    -webkit-box-shadow: 0 12px 8px -6px gray;
-    -moz-box-shadow: 0 12px 8px -6px gray;
-    box-shadow: 0 12px 8px -6px gray;
-    filter: progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=135, Strength=15);
+    max-width: 700px;
+    min-height: 700px;
     padding: 5em;
+    -webkit-box-shadow: 0 15px 10px #888;
+    -moz-box-shadow: 0 15px 10px #888;
+    box-shadow: 0 15px 10px #888;
 }
+
+
+/* == Fix pour telephone == */
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .bg-intro {
+        background-attachment: scroll;
+    }
