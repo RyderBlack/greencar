@@ -69,22 +69,23 @@ $(document).ready(function() {
     });
 });
 
+$('.carousel').carousel();
 
 $(document).ready(function() {
-    $(".testimonial-slider").owlCarousel({
-        items: 3,
-        itemsDesktop: [1000, 2],
-        itemsDesktopSmall: [979, 2],
-        itemsTablet: [550, 1],
-        pagination: true,
-        autoPlay: true
-    });
+    /*  $(".testimonial-slider").owlCarousel({
+          items: 3,
+          itemsDesktop: [1000, 2],
+          itemsDesktopSmall: [979, 2],
+          itemsTablet: [550, 1],
+          pagination: true,
+          autoPlay: true
+      }); */
 
-    $(".partenaires-slider").owlCarousel({
-        items: 4,
-        itemsDesktop: [1000, 2],
-        itemsDesktopSmall: [979, 2],
-        itemsTablet: [550, 1],
+    $(".entreprises-annonceurs-slider").owlCarousel({
+        items: 5,
+        itemsDesktop: [1000, 4],
+        itemsDesktopSmall: [979, 4],
+        itemsTablet: [550, 2],
         pagination: true,
         autoPlay: true
     });
@@ -92,9 +93,40 @@ $(document).ready(function() {
 });
 
 $(function() {
-  $('#slides').slidesjs({
-    width: 700,
-    height: 400,
-    navigation: false
-  });
+    $('#slides').slidesjs({
+        width: 700,
+        height: 400,
+        navigation: false
+    });
 });
+
+/*
+$('a.thumbnails').each(function(){
+    $(this).click(function(){
+        var src = $(this).attr('href');
+        if (src != $('img#largeImg').attr('src').replace(/\?(.*)/,'')) {
+            $('img#largeImg').stop().animate({opacity:'0'},function(){
+                    $(this).attr('src',src+'?'+Math.floor(Math.random()*(10*100)));
+            }).load(function(){
+                    $(this).stop().animate({opacity:'1'});
+            });
+        }
+        return false;
+    });
+});
+*/
+
+function cycleImages() {
+    var $active = $('.bg-intro .active0');
+    var $next = ($active.next().length > 0) ? $active.next() : $('.bg-intro .bg-images:first');
+    $next.css('z-index', 2); //move the next image up the pile
+    $active.fadeOut(2500, function() { //fade out the top image
+        $active.css('z-index', 1).show().removeClass('active0'); //reset the z-index and unhide the image
+        $next.css('z-index', 3).addClass('active0'); //make the next image the top one
+    });
+}
+
+$(document).ready(function() {
+    // run every 7s
+    setInterval('cycleImages()', 15000);
+})
