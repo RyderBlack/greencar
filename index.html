@@ -70,11 +70,6 @@
         <!-- DEBUT intro/slider-->
         <div class="bg-intro" id="intro">
 
-          <img class="bg-images active0" src="images/bg-intro-01.jpg" alt="My image" />
-          <img src="images/bg-intro-02.jpg" alt="My image" class="bg-images"/>
-          <img src="images/bg-intro-03.jpg" alt="My image" class="bg-images"/>
-          <img src="images/bg-intro-04.jpg" alt="My image" class="bg-images"/>
-
             <!-- DEBUT Partie Encart GAUCHE -->
             <div class="row text-center">
                 <div class="col-xs-8 col-xs-offset-2 col-md-offset-8 col-md-3 well">
@@ -91,7 +86,7 @@
                     <div class="row boutons_intro">
                         <!-- Bouton decouvrir TOTEM Mobi -->
                         <div id="decouvrir" class="row">
-                            <a href="#je_decouvre" class="scroll scrollspy"><button type="button" name="button" class="btn btn-default btn-lg bouton-s_abonner scroll scrollspy bouton">JE DÉCOUVRE</button></a>
+                            <a href="#je_decouvre" class="scroll scrollspy"><button type="button" name="button" class="btn btn-default btn-lg bouton-decouvrir scroll scrollspy bouton">JE DÉCOUVRE</button></a>
                         </div>
 
                         <!-- Bouton offre promo TOTEM Mobi -->
@@ -148,8 +143,8 @@
 
                     <!-- Titre Offre Promos-->
                     <div class="row text-center">
-                        <h2>OFFRE DE PARRAINAGE</h2>
-                        <h3 class="text-center soustitre-offre_promo"><span class="texte_en_vert">DEVENEZ CHEF DE TRIBU !</span></h3>
+                        <h2 class="blink">OFFRE DE PARRAINAGE</h2>
+                        <h3 class="text-center soustitre-offre_promo blink"><span class="texte_en_vert">DEVENEZ CHEF DE TRIBU !</span></h3>
                     </div>
 
                     <p>TOTEM lance une opération de parrainage: Pour chaque parrainage, recevez <span class="texte_en_rouge">10€ de crédit mobilité</span> et faites bénéficier votre filleul(e) d'une <span class="texte_en_vert">remise de 10€</span> sur son
@@ -177,7 +172,7 @@
         <!-- FIN Section : Offre Promos-->
 
         <!-- GROS TITRE PARTIE JE DECOUVRETitre Qu'est ce que TOTEM Mobi ?-->
-        <div class="row banniere-peinture" id="je_decouvre">
+        <div class="container-fluid banniere-peinture" id="je_decouvre">
             <h2 class="text-center gros-titre-totem_c_est_quoi"><span class="texte_en_vert">TOTEM mobi, c'est quoi ?</span></h2>
         </div>
 
@@ -194,7 +189,7 @@
 
                     <!-- Image Qu'est ce que TOTEM Mobi ?-->
                     <div class="col-md-6 text-right">
-                        <img src="images/img-03.jpg" alt="image totem 01" class="img-rounded img-responsive thumbnail">
+                        <img src="images/img-03.jpg" alt="image totem 01" class="img-rounded img-responsive">
                     </div>
 
                     <!-- Texte Qu'est ce que TOTEM Mobi ?-->
@@ -393,7 +388,7 @@
             <div class="row text-center memo-totem fade">
                 <p><strong>RETROUVEZ NOTRE MEMO POUR TOUT CONNAITRE SUR LE FONCTIONNEMENT DE L'APPLICATION</strong></p>
                 <!-- Bouton memo TOTEM Mobi -->
-                <button type="button" name="button" class="btn btn-default bouton-s_abonner"><a href="telechargement/memo_totem.pdf" download="memo_totem" target="_blank" >MEMO APP TOTEM MOBI</a></button>
+                <button type="button" name="button" class="btn btn-default bouton-telecharger-memo"><a href="telechargement/memo_totem.pdf" download="memo_totem" target="_blank" >MEMO APP TOTEM MOBI</a></button>
             </div>
 
 
@@ -438,7 +433,7 @@
 
                     <!-- Image section instructions -->
                     <div class="col-md-6">
-                        <img src="images/img-05.jpg" alt="image twizy 05" class="img-responsive img-rounded thumbnail">
+                        <img src="images/img-05.jpg" alt="image twizy 05" class="img-responsive img-rounded">
                     </div>
                 </div>
                 <!-- FIN Texte section tarifs -->
@@ -704,6 +699,7 @@
 
     <!-- Les scripts ci-dessous sert pour les animations,  ne pas toucher! -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/jquery.blink.js"></script>
     <script src="js/animation-on-scroll.js" charset="utf-8"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/slides.min.jquery.js"></script>

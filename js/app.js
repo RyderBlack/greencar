@@ -129,6 +129,7 @@ function cycleImages() {
 $(document).ready(function() {
     // run every 7s
     setInterval('cycleImages()', 7000);
+     $('.blink').blink({delay: 500});
 });
 
 
