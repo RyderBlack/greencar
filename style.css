@@ -666,23 +666,6 @@ i.fa.fa-envelope-o:hover {
 
 /* == FIN SECTION Stationnement == */
 
-
-/* == DEBUT SECTION DATAMOBILE == */
-
-.section-datamobile {
-    padding: 50px;
-}
-
-.titre-datamobile {
-    padding: 20px;
-    font-size: 3em;
-}
-
-.texte-datamobile {
-    font-size: 16px;
-    padding: 50px;
-}
-
 .sans-puce {
     list-style: none;
 }
@@ -692,35 +675,6 @@ i.fa.fa-envelope-o:hover {
 
 
 /* === PAGE 3 - CONDUCTEUR === */
-
-
-/* STYLE de l'en-tête */
-
-.header-conducteur {
-    height: 80vh;
-    background-image: url(images/bg-conducteur.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: bottom;
-}
-
-
-/* == DEBUT SECTION INSTRUCTIONS == */
-
-.section-instructions {
-    padding: 50px;
-}
-
-.titre-instructions {
-    font-size: 2em;
-}
-
-.texte-instructions {
-    font-size: 18px;
-}
-
-
-/* == FIN SECTION INSTRUCTIONS == */
 
 
 /* === PAGE 4 - VOUS ABONNER / CALINDA === */
@@ -765,27 +719,6 @@ i.fa.fa-envelope-o:hover {
     height: 7vh;
 }
 
-
-/* == DEBUT SECTION TARIF ANNONCEUR == */
-
-.section-tarif_entreprises {
-    padding: 50px;
-}
-
-.titre-tarif_entreprises {
-    font-size: 4em;
-    font-family: "housepaint";
-}
-
-.texte-tarif_entreprises {
-    padding: 30px;
-    font-size: 16px;
-}
-
-
-/* == FIN SECTION TARIF ANNONCEUR == */
-
-
 /* == DEBUT SECTION STATION TOTEM == */
 
 .section-station_totem {
@@ -801,6 +734,10 @@ i.fa.fa-envelope-o:hover {
 .texte-station_totem {
     padding: 30px;
     font-size: 15px;
+}
+
+#slider-entreprise {
+    min-width: 600px;
 }
 
 
@@ -823,7 +760,6 @@ i.fa.fa-envelope-o:hover {
     padding: 30px;
     font-size: 16px;
 }
-
 
 /* == FIN SECTION TIPI == */
 
@@ -1464,9 +1400,9 @@ a, a:hover, a:active, a:focus {
     max-width: 700px;
     min-height: 700px;
     padding: 5em;
-    -webkit-box-shadow: 0 15px 10px #888;
-    -moz-box-shadow: 0 15px 10px #888;
-    box-shadow: 0 15px 10px #888;
+    -webkit-box-shadow: 0 15px 30px #ccc;
+    -moz-box-shadow: 0 15px 30px #ccc;
+    box-shadow: 0 15px 30px #ccc;
 }
 
 

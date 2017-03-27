@@ -151,3 +151,54 @@ jQuery(document).ready(function($) {
         $('#carousel-text').html($('#slide-content-' + id).html());
     });
 });
+
+// Ci-dessous le slider de la partie entreprise, page entreprise
+jQuery(document).ready(function($) {
+
+    $('#slider-entreprise').carousel({
+        interval: 5000
+    });
+
+    //Handles the carousel thumbnails
+    $('[id^=carousel-selector-]').click(function() {
+        var id_selector = $(this).attr("id");
+        try {
+            var id = /-(\d+)$/.exec(id_selector)[1];
+            console.log(id_selector, id);
+            jQuery('slider-entreprise').carousel(parseInt(id));
+        } catch (e) {
+            console.log('Regex failed!', e);
+        }
+    });
+    // When the carousel slides, auto update the text
+    $('#slider-entreprise').on('slid.bs.carousel', function(e) {
+        var id = $('.item.active').data('slide-number');
+        $('#carousel-text').html($('#slide-content-' + id).html());
+    });
+});
+
+
+// Ci-dessous le slider de la partie  tipi, page entreprise
+jQuery(document).ready(function($) {
+
+    $('#slider-tipi').carousel({
+        interval: 5000
+    });
+
+    //Handles the carousel thumbnails
+    $('[id^=carousel-selector-]').click(function() {
+        var id_selector = $(this).attr("id");
+        try {
+            var id = /-(\d+)$/.exec(id_selector)[1];
+            console.log(id_selector, id);
+            jQuery('#myCarousel').carousel(parseInt(id));
+        } catch (e) {
+            console.log('Regex failed!', e);
+        }
+    });
+    // When the carousel slides, auto update the text
+    $('#slider-tipi').on('slid.bs.carousel', function(e) {
+        var id = $('.item.active').data('slide-number');
+        $('#carousel-text').html($('#slide-content-' + id).html());
+    });
+});
