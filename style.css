@@ -441,6 +441,12 @@ legend>* {
     margin-top: 50px;
 }
 
+.rl-car {
+  position: fixed;
+  bottom: -8px;
+  width: 100%;
+}
+
 .partie-stationnement {
     padding-left: 50px;
     border-left: .5px solid lightgray;
@@ -826,9 +832,16 @@ i.fa.fa-envelope-o:hover {
 
 
 /* == FIN SECTION RESEAU/MARKETING TOTEM == */
+.texte-reseau_marketing_totem i.fa {
+    color: rgb(255, 140, 6);
+}
+
+i.fa.fa-map-marker {
+    padding-right: 0;
+}
 
 .image-picto-annonceurs {
-    max-width: 50%;
+    max-width: 35%;
     margin-bottom: 10px;
 }
 
