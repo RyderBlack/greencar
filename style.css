@@ -851,6 +851,10 @@ i.fa.fa-envelope-o:hover {
     overflow-y: auto;
 }
 
+.hide-bullets > li {
+    cursor: pointer;
+}
+
 .hide-bullets::-webkit-scrollbar {
    -webkit-appearance: none;
 }
@@ -892,6 +896,7 @@ i.fa.fa-envelope-o:hover {
 
 .le-slider-annonceur {
     margin-top: 5em;
+    margin-left: 2em;
     background-color: white;
     padding: 2em;
 }
