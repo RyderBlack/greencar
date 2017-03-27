@@ -1,3 +1,4 @@
+// Ci-dessous le lien pour aller vers la partie offre promo
 $("#promo a[href^='#offre_promo']").on('click', function(e) {
 
     // prevent default anchor click behavior
@@ -18,6 +19,7 @@ $("#promo a[href^='#offre_promo']").on('click', function(e) {
 
 });
 
+// Ci-dessous le lien pour aller vers la partie decouvrir
 $("#decouvrir a[href^='#je_decouvre']").on('click', function(e) {
 
     // prevent default anchor click behavior
@@ -38,6 +40,7 @@ $("#decouvrir a[href^='#je_decouvre']").on('click', function(e) {
 
 });
 
+// Ci-dessous la fleche pour revenir en haut de page
 if ($('#back-to-top').length) {
     var scrollTrigger = 100, // px
         backToTop = function() {
@@ -60,6 +63,7 @@ if ($('#back-to-top').length) {
     });
 };
 
+// Ci-dessous le bouton des 4 etapes
 $(document).ready(function() {
     $(".bouton-etapes").click(function() {
         $('#number1').fadeIn(1000);
@@ -69,17 +73,18 @@ $(document).ready(function() {
     });
 });
 
+// Ci-dessous l'animation pour les bandeaux sponsors-recompenses-entreprises/partenaires-annonceurs
 $('.carousel').carousel();
 
 $(document).ready(function() {
-    /*  $(".testimonial-slider").owlCarousel({
-          items: 3,
+     $(".sponsors-recompenses-slider").owlCarousel({
+          items: 2,
           itemsDesktop: [1000, 2],
           itemsDesktopSmall: [979, 2],
           itemsTablet: [550, 1],
-          pagination: true,
+          pagination: false,
           autoPlay: true
-      }); */
+      });
 
     $(".entreprises-annonceurs-slider").owlCarousel({
         items: 5,
@@ -92,6 +97,7 @@ $(document).ready(function() {
 
 });
 
+// Ci-dessous le slider pour les etapes comment fonctionne le service/les etapes
 $(function() {
     $('#slides').slidesjs({
         width: 700,
@@ -100,22 +106,8 @@ $(function() {
     });
 });
 
-/*
-$('a.thumbnails').each(function(){
-    $(this).click(function(){
-        var src = $(this).attr('href');
-        if (src != $('img#largeImg').attr('src').replace(/\?(.*)/,'')) {
-            $('img#largeImg').stop().animate({opacity:'0'},function(){
-                    $(this).attr('src',src+'?'+Math.floor(Math.random()*(10*100)));
-            }).load(function(){
-                    $(this).stop().animate({opacity:'1'});
-            });
-        }
-        return false;
-    });
-});
-*/
 
+// Ci-dessous la gallerie photos annonceurs
 function cycleImages() {
     var $active = $('.bg-intro .active0');
     var $next = ($active.next().length > 0) ? $active.next() : $('.bg-intro .bg-images:first');
@@ -126,6 +118,8 @@ function cycleImages() {
     });
 };
 
+
+// Ci-dessous le clignotement sur offre promo
 $(document).ready(function() {
     // run every 7s
     setInterval('cycleImages()', 7000);
@@ -133,6 +127,7 @@ $(document).ready(function() {
 });
 
 
+// Ci-dessous le slider de la gallerie photos annonceurs
 jQuery(document).ready(function($) {
 
     $('#myCarousel').carousel({
