@@ -443,6 +443,7 @@ legend>* {
 
 
 .twizy-anim {
+  padding-top: 20px;
   animation: shimmy 3.5s infinite;
 }
 
