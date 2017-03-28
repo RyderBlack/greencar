@@ -21,6 +21,7 @@
 
     <!-- == ici commence le contenu visuel de la page ==-->
     <div class="container-fluid page-entreprises">
+      <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
         <!-- DEBUT en-tête de page-->
         <header class="header-entreprises">
@@ -68,19 +69,19 @@
 
         <!-- GROS TITRE PARTIE annonceurs -->
         <div class="row text-center banniere-peinture">
-            <h1 class="text-center gros-titre-entreprises-annonceurs"><span class="texte_en_vert">TOTEM MOBI POUR LES ENTREPRISES</span></h1>
+            <h1 class="text-center gros-titre-entreprises-annonceurs"><span class="texte_en_vert fade">TOTEM MOBI POUR LES ENTREPRISES</span></h1>
         </div>
 
 
-        <!-- DEBUT SECTION STATION TOTEM -->
-        <div class="container-fluid section-station_totem">
+        <!-- DEBUT L'OFFRE TOTEM -->
+        <div class="container-fluid section-l-offre-totem">
             <div class="container" style="border-bottom: .3px solid lightgray;">
 
-                <div class="row texte-station_totem">
+                <div class="row texte-l-offre-totem">
 
                     <!-- Texte section instructions -->
-                    <div class="col-md-6">
-                        <h4 class="titre-station_totem text-center"><span class="texte_en_vert">L'offre totem mobi</span></h4>
+                    <div class="col-md-6 fade">
+                        <h4 class="titre-l-offre-totem text-center"><span class="texte_en_vert">L'offre totem mobi</span></h4>
                         <p>Vous souhaitez bénéficier du service TOTEM mobi pour votre entreprise et vos salariés ? </p>
                         <p>TOTEM mobi étend son service et propose le service de location en autopartage dans les centres villes et dans les zones périphériques. <br> Le service répond parfaitement aux problèmes identifiés dans les PDE et PDIE (Plan de Déplacements
                             Entreprises et Inter-Entreprises). <br> TOTEM mobi propose une offre modulaire adaptée à la structure de votre entreprise. </p>
@@ -98,11 +99,11 @@
                             <a href="mailto:commercial@totem-mobi.fr"><span class="texte_en_vert">commercial@totem-mobi.fr</span></a></p>
                     </div>
 
-                    <!-- Image section instructions -->
+                    <!-- Image gallerie photos -->
                     <div class="col-md-6">
 
                             <!-- Top part of the slider -->
-                            <div class="row" id="slider">
+                            <div class="row fade" id="slider">
                                 <div class="col-md-12" id="carousel-bounding-box-02">
                                     <div class="carousel slide" id="slider-entreprise">
                                         <!-- Carousel items -->
@@ -132,27 +133,28 @@
                                                 <img src="images/slider-entreprise/img-entreprise-08.jpg"></div>
 
                                         </div>
-
+                                        <!--FIN carousel inner-->
                                     </div>
+                                    <!--FIN id slider entreprise-->
                                 </div>
+                                <!--FIN id carousel bounding box-->
                             </div>
-
                         <!--FIN DU Slider-->
                     </div>
                       <!-- FIN col-md-6 partie slider entreprise -->
                 </div>
-                <!-- FIN Texte section station_totem -->
+                <!-- FIN row/Texte section L'OFFRE TOTEM -->
             </div>
-            <!-- FIN contenu : section station_totem -->
+            <!-- FIN conteneur : section L'OFFRE TOTEM -->
         </div>
-        <!-- FIN section : station_totem -->
+        <!-- FIN section : L'OFFRE TOTEM -->
 
 
         <!-- DEBUT SECTION TIPI -->
         <div class="container-fluid section-tipi">
             <div class="container">
 
-                <div class="row texte-tipi">
+                <div class="row texte-tipi fade">
                     <!-- Image section instructions -->
                     <div class="col-md-6">
                       <!-- Top part of the slider -->
@@ -182,8 +184,9 @@
                   <!--FIN DU Slider-->
                     </div>
                   <!-- FIN col-md-6 partie slider tipi -->
+
                     <!-- Texte section instructions -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 fade">
                         <h4 class="titre-tipi text-center"><span class="texte_en_vert">TIPI</span></h4>
                         <p>Vous habitez ou avez un commerce en zone verte TOTEM ?</p>
                         <p>Vous disposez d’un emplacement public sur lequel un Twizy peut-être stationné le temps d’une recharge ?</p>
@@ -207,7 +210,7 @@
         <!-- DEBUT SECTION  ANNONCEURS PARTENAIRES -->
         <div class="container-fluid section-annonceurs">
             <div class="container">
-                <div class="entreprises-annonceurs-slider owl-carousel">
+                <div class="entreprises-annonceurs-slider owl-carousel fade">
 
                     <!-- Partenaire 01-->
                     <div class="testimonial">
@@ -366,6 +369,7 @@
 
     <!-- Les scripts ci-dessous sert pour les animations,  ne pas toucher! -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+      <script src="js/animation-on-scroll.js" charset="utf-8"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/app.js" charset="utf-8"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>

@@ -441,15 +441,32 @@ legend>* {
     margin-top: 50px;
 }
 
-.rl-car {
-  position: fixed;
-  bottom: -8px;
-  width: 100%;
+
+.twizy-anim {
+  animation: shimmy 3.5s infinite;
+}
+
+@keyframes shimmy {
+  0% {
+    transform: translateX(-600px);
+  }
+  100% {
+    transform: translateX(70px);
+  }
 }
 
 .partie-stationnement {
     padding-left: 50px;
     border-left: .5px solid lightgray;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .picto-stationnement {
@@ -458,6 +475,8 @@ legend>* {
 
 .picto-stationnement img {
     max-width: 85%;
+    animation: roll 3s infinite;
+    transform: rotate(30deg);
 }
 
 
@@ -727,17 +746,17 @@ i.fa.fa-envelope-o:hover {
 
 /* == DEBUT SECTION STATION TOTEM == */
 
-.section-station_totem {
+.section-l-offre-totem  {
     padding: 50px;
 }
 
-.titre-station_totem {
+.titre-l-offre-totem  {
     margin-top: 0;
     font-size: 2em;
     font-family: "housepaint"
 }
 
-.texte-station_totem {
+.texte-l-offre-totem  {
     padding: 30px;
     font-size: 15px;
 }
