@@ -452,7 +452,7 @@ legend>* {
     transform: translateX(-600px);
   }
   100% {
-    transform: translateX(70px);
+    transform: translateX(50px);
   }
 }
 
