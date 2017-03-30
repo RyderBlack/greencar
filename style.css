@@ -226,7 +226,6 @@ legend>* {
     width: 100%;
 }
 
-
 /* == FIN INTRO == */
 
 
@@ -235,9 +234,6 @@ legend>* {
 .section-offre_promo {
     background-color: #f8f8f8;
     padding: 50px;
-}
-
-.offre_du_moment {
     /*display : none; */
 }
 
@@ -865,13 +861,13 @@ i.fa.fa-map-marker {
     margin-bottom: 10px;
 }
 
-/* == DEBUT SECTION GALLERIE PHOTOS== */
+/* == DEBUT SECTION GALERIE PHOTOS== */
 
-.section-gallerie-slider-annonceurs {
+.section-galerie-slider-annonceurs {
     background-color: #eee;
 }
 
-.titre-gallerie-slider-annonceurs > h3{
+.titre-galerie-slider-annonceurs > h3{
     font-family: "housepaint";
     font-size: 4em;
 }
@@ -938,8 +934,7 @@ i.fa.fa-map-marker {
     border-radius: 10px;
 }
 
-
-/* == FIN SECTION GALLERIE PHOTOS== */
+/* == FIN SECTION GALERIE PHOTOS== */
 
 
 /* == DEBUT SECTION TARIF ANNONCEUR == */
@@ -1457,3 +1452,40 @@ a, a:hover, a:active, a:focus {
       background-size: 100% 100%;
       background-attachment: scroll;
     }
+}
+
+/* == PAGE EXEMPLE == */
+
+.bg-exemple {
+
+  -webkit-background-size:100% 100%;
+   background-image: url(images/bg-intro-01.jpg);
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   min-height:95vh;
+}
+
+.section-exemple-01 {
+  padding: 100px;
+  background-color: #eee;
+}
+
+.section-exemple-02 {
+  padding: 100px;
+  background-color: white;
+}
+
+.section-exemple-03 {
+  padding: 100px;
+  background-color: #f2f2f2;
+}
+
+.section-exemple-04 {
+  padding: 100px;
+  background-color: white;
+}
